@@ -1,0 +1,138 @@
+    .ALLPAGES {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Frequently-Asked-Questions {
+    background-color: #4169E1;
+    padding: 64px 96px;
+    position: relative;
+  }
+  
+  .Frequently-Asked-Questions h1 {
+    font-size: 30px;
+    color: #fff;
+   
+  }
+  
+  .Frequently-Asked-Questions p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+    margin-top: -10px;
+    margin-bottom: 40px;
+  }
+  
+  .faq-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+  }
+  
+  .personStanding img {
+    width: 306px;
+    height: 776px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .Switches {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 776px;
+    overflow-y: auto;
+    border-radius: 12px;
+    position: relative;
+    z-index: 0;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  }
+  .Switches::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .faq-section {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding: 20px;
+    padding-top: 40px;
+  }
+  
+  .section-header {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    transform: translateY(-100%);
+    background-color: #4169E1;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 0;
+    font-weight: 700;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  
+  .faq-list {
+    background: white;
+    margin-top: -30px;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    cursor: pointer;
+    background: #fff;
+  }
+  
+  .question h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .toggle {
+    width: 48px;
+    height: 24px;
+    border-radius: 12px;
+    background: #ccc;
+    position: relative;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .toggle.active {
+    background: #4CAF50;
+  }
+  
+  .toggle span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: left 0.3s;
+  }
+  
+  .toggle.active span {
+    left: 26px;
+  }
+  
+  .answer {
+    padding: 0 20px 20px;
+    color: black;
+  }

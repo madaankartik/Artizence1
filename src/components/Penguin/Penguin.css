@@ -1,0 +1,17 @@
+.ground {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.penguin-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 80px;
+  border-radius: 50%;
+  width: 80px;
+  cursor: pointer;
+  z-index: 1000;
+}

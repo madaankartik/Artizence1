@@ -1,0 +1,59 @@
+.ai-assistant-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ai-assistant-overlay {
+    background-color: rgba(0, 64, 64, 0.6);
+    height:78.5%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .ai-assistant-overlay h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom:5px;
+    color: white;
+  }
+  
+  .ai-assistant-overlay p {
+    font-size: 1.0rem;
+    font-weight: 200;
+    margin-bottom: 25px;
+  }
+  
+  .ai-assistant-btn {
+    background-color: #005f5f;
+    color:white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 300;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  
+  .ai-assistant-btn:hover {
+    background-color: #e0f7f7;
+    color:#005f5f;
+  }
+  

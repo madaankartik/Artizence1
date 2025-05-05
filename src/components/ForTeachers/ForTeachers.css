@@ -1,0 +1,51 @@
+.for-teachers-dropdown {
+  display: flex;
+  padding: 20px;
+  background: white;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 1000px;
+  z-index: 1000;
+}
+
+.ai-team {
+  width: 35%;
+  padding-right: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.ai-team h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.ai-team ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ai-team li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.ai-platform-grid {
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding-left: 20px;
+}
+
+.feature h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.feature p {
+  font-size: 13px;
+  color: #555;
+}

@@ -1,0 +1,56 @@
+.pricing-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f9f9f9;
+  }
+  
+  .pricing-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #1e2a3a;
+  }
+  
+  .pricing-section p {
+    color: #11766e;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+  
+  .region-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .region-toggle button {
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  .region-toggle button.active {
+    background-color: #2ac29a;
+    color: white;
+  }
+  
+  .pricing-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+  }
+  .pricing-section img{
+    height: auto;
+    width: auto;
+    margin-bottom: 50px;
+  }
+  
