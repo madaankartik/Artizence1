@@ -41,23 +41,7 @@ const HeroSection = () => {
           <p>
             Any Country, Any curriculum/board, Any Language - Global Platform - Localized solution
           </p>
-
-          <div className="badges">
-            <span className="badge">🌐 Global Platform</span>
-            <span className="badge">💬 Localized Content for Every Region</span>
-            <span className="badge">🧑‍🏫 K-12 Coverage</span>
-            <span className="badge">📘 All Major Curriculums</span>
-            <span className="badge">🗣️ Multilingual Support</span>
-          </div>
-          <div className="feature-container">
-      <div className="feature-item">✅ Works in your language</div>
-      <div className="feature-item">✅ Save hours every week</div>
-      <div className="feature-item">✅ School-ready</div>
-      <div className="feature-item">✅ Student-safe</div>
-      <div className="feature-item">✅ Aligned to global curriculum</div>
-      <div className="feature-item">✅ No training needed</div>
-      <div className="feature-item">✅ Works on any device</div>
-    </div>
+          
         </div>
       </div>
 
@@ -92,15 +76,6 @@ const HeroSection = () => {
         <p className="subheading">
           Explore the AI-powered tools that simplify your day, spark engagement, and save hours of effort.
         </p>
-        <div className="feature-container">
-      <div className="feature-item">✅ Works in your language</div>
-      <div className="feature-item">✅ Save hours every week</div>
-      <div className="feature-item">✅ School-ready</div>
-      <div className="feature-item">✅ Student-safe</div>
-      <div className="feature-item">✅ Aligned to global curriculum</div>
-      <div className="feature-item">✅ No training needed</div>
-      <div className="feature-item">✅ Works on any device</div>
-    </div>
         <div className="feature-grid">
           {featureData.map((item, index) => (
             <FeatureBox key={index} emoji={item.emoji} text={item.text} />

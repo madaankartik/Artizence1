@@ -1,56 +1,115 @@
+/* Base styles for the Pricing Section */
 .pricing-section {
-    padding: 60px 20px;
-    text-align: center;
-    background: #f9f9f9;
-  }
-  
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.pricing-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #1e2a3a;
+}
+
+.pricing-section p {
+  color: #11766e;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+/* Educator Section */
+.educator-section img {
+  max-width: 100%; /* Ensure the image scales properly */
+  height: auto;
+  margin-bottom: 50px;
+}
+
+/* Region Toggle Section */
+.region-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.region-toggle button {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.region-toggle button.active {
+  background-color: #2ac29a;
+  color: white;
+}
+
+/* Grid Layout for Pricing Cards */
+.pricing-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: center;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 768px) {
   .pricing-section h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #1e2a3a;
+    font-size: 1.8rem;
   }
-  
+
   .pricing-section p {
-    color: #11766e;
-    max-width: 600px;
-    margin: 0 auto 30px;
+    font-size: 1rem;
   }
-  
-  .region-toggle {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    overflow: hidden;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
+
   .region-toggle button {
-    padding: 10px 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-weight: 500;
-    transition: 0.3s;
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
-  
-  .region-toggle button.active {
-    background-color: #2ac29a;
-    color: white;
-  }
-  
+
   .pricing-grid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-  .pricing-section img{
-    height: auto;
-    width: auto;
-    margin-bottom: 50px;
+
+  .educator-section img {
+    width: 90%; /* Adjust image size for tablet */
+    margin-bottom: 30px;
   }
-  
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 480px) {
+  .pricing-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .pricing-section p {
+    font-size: 0.9rem;
+    margin: 0 auto 20px;
+  }
+
+  .region-toggle button {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
+
+  .educator-section img {
+    width: 100%; /* Ensure the image is fully responsive */
+    margin-bottom: 20px;
+  }
+}
+

@@ -1,102 +1,133 @@
-
+/* Base Navbar Layout */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #0E479E;
-    color: white;
-    padding: 20px 80px; 
-    box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #0E479E;
+  color: white;
+  padding: 20px 80px;
+  box-sizing: border-box;
+}
+
+/* Wrap nav and topbar in a horizontal container */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Navigation Links */
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.navbar nav ul li {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+li:hover {
+  border-bottom: 2px solid white;
+}
+
+/* Topbar (Language + Country) */
+.topbar {
+  display: flex;
+  align-items: center;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.selector {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.selector:hover {
+  opacity: 0.85;
+}
+
+/* Hamburger Button (hidden by default) */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive for tablets and below */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 40px;
   }
-  
+
+  .hamburger {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .navbar nav {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar nav.show-menu {
+    display: block;
+  }
 
   .navbar nav ul {
-    display: flex;
-    list-style: none;
-    gap: 28px;
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
   }
-  
-  .navbar nav ul li {
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 150%;
-  
-  }
-  li:hover{
-    border-bottom: 2px solid white;
-  }
-  
 
   .topbar {
-    display: flex;
-    align-items: center;
-    
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 12px;
   }
-  
+
   .right-side {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    cursor: pointer;
+    gap: 20px;
     flex-wrap: wrap;
   }
-  
-  .selector {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-  
-  .selector:hover {
-    opacity: 0.85;
-  }
-  
+}
 
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 12px 40px;
-    }
-  
-    .navbar nav ul {
-      flex-direction: column;
-      gap: 12px;
-      margin-top: 10px;
-    }
-  
-    .topbar {
-      margin-top: 12px;
-      width: 100%;
-      justify-content: flex-start;
-    }
-  
-    .right-side {
-      gap: 20px;
-    }
+/* Further optimization for very small screens */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px 20px;
   }
-  
 
-  @media (max-width: 480px) {
-    .navbar {
-      padding: 12px 20px; 
-    }
-  
-    .navbar nav ul li {
-      font-size: 14px;
-    }
-  
-    .selector span {
-      font-size: 14px;
-    }
-  
-    .right-side {
-      gap: 16px;
-    }
+  .navbar nav ul li {
+    font-size: 14px;
   }
-  
+
+  .selector span {
+    font-size: 14px;
+  }
+
+  .right-side {
+    gap: 16px;
+  }
+}

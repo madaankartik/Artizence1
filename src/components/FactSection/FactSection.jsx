@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './FactSection.css';
-import Standing from "../../assets/TeacherStanding.jpg"
-
+import Standing from "../../assets/TeacherStanding.jpg";
 
 function App() {
   const [activeId, setActiveId] = useState(null);
@@ -65,7 +64,7 @@ function App() {
     <div className="ALLPAGES">
       <div className="Frequently-Asked-Questions">
         <h1>Frequently Asked Questions</h1>
-        <p style={{color:"white"}}>Find answers to common questions about YoLearn.ai</p>
+        <p>Find answers to common questions about YoLearn.ai</p>
 
         <div className="faq-wrapper">
           <div className="personStanding">

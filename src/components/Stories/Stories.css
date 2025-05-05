@@ -1,178 +1,228 @@
+.ALLPAGES {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
-  .ALLPAGES {
-    display: flex;
-    flex-direction: column;
-  }
+.Teacher_Success_Story {
+  background:
+    linear-gradient(90deg, #0077B6 30%, rgba(0, 119, 182, 0) 100%),
+    url('StoryBackground.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.Teacher_About {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.scroll-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-blur-left,
+.scroll-blur-right {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.scroll-blur-left {
+  left: 0;
+  background: linear-gradient(to right, #0077B6 5%, rgba(0, 119, 182, 0));
+}
+
+.scroll-blur-right {
+  right: 0;
+  background: linear-gradient(to left, #0077B6 5%, rgba(0, 119, 182, 0));
+}
+
+.Photo-description {
+  flex: 0 0 auto;
+  background: #ffffff;
+  color: #000;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 260px;
+  text-align: left;
+  padding: 0.75rem;
+}
+
+.Photo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.Photo img {
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.desc {
+  font-size: 0.9rem;
+}
+
+.desc p1 {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+}
+
+.desc z {
+  display: block;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #00BBA6;
+}
+
+.desc p {
+  margin: 0.2rem 0;
+  font-weight: 500;
+}
+
+.description p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #000;
+  padding: 0.5rem 0;
+}
+
+.under_description {
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.under_description h1 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.boxes6 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.desc2 {
+  background-color: #E6F7F2;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.desc2 h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #00BBA6;
+}
+
+.desc2 p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.Frequently-Asked-Questions {
+  background-color: #4169E1;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.Frequently-Asked-Questions h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: white;
+}
+
+.Frequently-Asked-Questions p {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: white;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.personStanding img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+}
+
+/* RESPONSIVE TWEAKS */
+@media (max-width: 768px) {
   .Teacher_Success_Story {
-    background: 
-      linear-gradient(90deg, #0077B6 30%, rgba(0, 119, 182, 0) 100%),
-      url('StoryBackground.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 3rem 0px;
-    height: 807px;
-  }
-  
-  .Teacher_About {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    width: 100%;
-    height: 193px;
-    border-radius: 12px;
-    padding: 16px;
-    gap: 8px;
-    border-width: 1px;
-  
-  }
-  
-  .scroll-wrapper {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .scroll-blur-left,
-  .scroll-blur-right {
-    position: absolute;
-    top: 0;
-    width: 300px;
-    height: 100%;
-    z-index: 2;
-    pointer-events: none;
-  }
-  
-  .scroll-blur-left {
-    left: 0;
-    background: linear-gradient(to right, #0077B6 5%, rgba(0, 119, 182, 0));
-  }
-  
-  .scroll-blur-right {
-    right: 0;
-    background: linear-gradient(to left, #0077B6 5%, rgba(0, 119, 182, 0));
-  }
-  
-  
-  
-  
-  .Photo-description {
-    flex: 0 0 auto;
-    background: #ffffff;
-    color: #000;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    width: 280px;
-    height: auto;
-    text-align: left;
-    
-   
-  }
-  .Photo{
-    display: flex;
-    font-size: 12px
-  }
-  
-  .Photo img {
-    border-radius: 100%;
-    width: 91px;
-    height: 70px;
-  
-  }
-  
-  .desc {
-    margin-top: 0.5rem;
-  }
-  
-  .desc p1{
-    font-size: 16px;
-    font-weight: bolder;
-  }
-  .desc p {
-    margin: 0.2rem 0;
-    font-weight: 500;
-  }
-  
-  .desc z {
-    display: block;
-    font-size: 14px;
-    font-style: italic;
-    color:#00BBA6;
-  }
-  
-  .description p {
-    margin-top: 1rem;
-    font-size: 14px;
-    color:#000000;
-    padding: 10px;
-  }
-  
-  .under_description {
-    margin-top: 3rem;
     padding: 2rem 1rem;
-    color: #ffffff;
-    text-align: center;
   }
-  
-  .under_description h1 {
-    margin-bottom: 2rem;
-    font-size: 1.8rem;
-  }
-  
+
   .boxes6 {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1.5rem;
-    max-width: 1000px;
-    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
-  .desc2{
-    background-color: #E6F7F2;
-    width: 300;
-    height: 112;
-    border-radius: 8px;
-    padding: 16px;
-    gap: 8px;
-  }
+
   .desc2 h1 {
-    margin: 0;
-    font-size: 40px;
-    color:#00BBA6;
+    font-size: 1.5rem;
   }
-  
+
   .desc2 p {
-    margin: 0.3rem 0 0;
-    font-size: 16px;
-    color: #000000;
+    font-size: 0.9rem;
   }
-  
-  .Frequently-Asked-Questions{
-    background-color: #4169E1;
-    width: 1440;
-    height: 776;
-    padding-top: 64px;
-    padding-right: 96px;
-    padding-left: 96px;
-    padding-bottom: 64px;
-    gap: 32px;
-  
-  }
-  
+
   .Frequently-Asked-Questions h1 {
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 48px;
-    color: white
+    font-size: 1.5rem;
   }
-  .Frequently-Asked-Questions p{
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 150%;
-    color: white
+
+  .Frequently-Asked-Questions p {
+    font-size: 1rem;
   }
-  .personStanding img{
-    width: 306px;
-    height: 776px;
-    object-fit: cover;
-    border-radius: 8px;  
+}
+
+@media (max-width: 480px) {
+  .Photo-description {
+    width: 220px;
   }
+
+  .desc p1 {
+    font-size: 0.9rem;
+  }
+
+  .desc z {
+    font-size: 0.75rem;
+  }
+
+  .description p {
+    font-size: 0.85rem;
+  }
+
+  .under_description h1 {
+    font-size: 1.4rem;
+  }
+
+  .desc2 h1 {
+    font-size: 1.2rem;
+  }
+
+  .desc2 p {
+    font-size: 0.85rem;
+  }
+}
