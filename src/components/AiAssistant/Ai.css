@@ -1,23 +1,23 @@
-/* Ai Section */
+
 .ai-assistant-section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 50vh; /* Reduced height to 50% of the viewport */
+  height: 50vh;  
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Overlay Styling */
+
 .ai-assistant-overlay {
-  background-color: rgba(0, 64, 64, 0.7); /* Increased opacity for better contrast */
+  background-color: rgba(0, 64, 64, 0.7);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; /* Ensure it covers the entire image */
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,25 +25,25 @@
   color: white;
   text-align: center;
   padding: 20px;
-  height: 100%; /* Ensure the overlay takes up the full height of the section */
+  height: 100%; 
 }
 
-/* Header Styling */
+
 .ai-assistant-overlay h1 {
-  font-size: 2.5rem; /* Adjust font size */
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 10px;
   color: white;
 }
 
-/* Paragraph Styling */
+
 .ai-assistant-overlay p {
-  font-size: 1.2rem; /* Adjust font size */
+  font-size: 1.2rem; 
   font-weight: 300;
   margin-bottom: 25px;
 }
 
-/* Button Styling */
+
 .ai-assistant-btn {
   background-color: #005f5f;
   color: white;
@@ -51,7 +51,7 @@
   padding: 14px 28px;
   border-radius: 6px;
   font-weight: 300;
-  font-size: 1.1rem; /* Increase font size for readability */
+  font-size: 1.1rem; 
   cursor: pointer;
   transition: background-color 0.3s ease;
   display: inline-block;
@@ -60,44 +60,43 @@
   margin: 0 auto;
 }
 
-/* Button Hover Effect */
 .ai-assistant-btn:hover {
   background-color: #e0f7f7;
   color: #005f5f;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .ai-assistant-overlay h1 {
-    font-size: 2rem; /* Reduce font size for smaller screens */
+    font-size: 2rem;
     margin-bottom: 10px;
   }
 
   .ai-assistant-overlay p {
-    font-size: 1rem; /* Adjust paragraph size */
+    font-size: 1rem; 
   }
 
   .ai-assistant-btn {
-    padding: 12px 24px; /* Adjust button padding */
-    font-size: 1rem; /* Adjust button font size */
+    padding: 12px 24px;
+    font-size: 1rem; 
   }
 }
 
 @media (max-width: 480px) {
   .ai-assistant-overlay {
-    padding: 15px; /* Adjust padding on very small screens */
+    padding: 15px; 
   }
 
   .ai-assistant-overlay h1 {
-    font-size: 1.5rem; /* Adjust font size further */
+    font-size: 1.5rem; 
   }
 
   .ai-assistant-overlay p {
-    font-size: 0.9rem; /* Adjust paragraph size further */
+    font-size: 0.9rem; 
   }
 
   .ai-assistant-btn {
-    padding: 10px 20px; /* Adjust button padding */
-    font-size: 0.9rem; /* Adjust button font size */
+    padding: 10px 20px; 
+    font-size: 0.9rem;
   }
 }

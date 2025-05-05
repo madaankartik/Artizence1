@@ -50,7 +50,7 @@
 .footer-about {
   flex: 2;
   min-width: 300px;
-  margin-left: 50px; /* Adjusted for better spacing */
+  margin-left: 50px; 
 }
 
 .footer-about p {
@@ -114,7 +114,7 @@
   font-size: 0.85rem;
 }
 
-/* Mobile and Tablet Adjustments */
+
 @media (max-width: 768px) {
   .footer-header {
       flex-direction: column;
@@ -143,7 +143,7 @@
   }
 }
 
-/* Tablet Adjustments */
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .footer-header {
       flex-direction: column;
@@ -163,7 +163,7 @@
   }
 }
 
-/* Large Screens (No Change from Original) */
+
 @media (min-width: 1024px) {
   .footer-header {
       flex-direction: row;

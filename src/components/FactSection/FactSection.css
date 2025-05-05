@@ -1,23 +1,20 @@
-/* Overall Layout */
+
 .ALLPAGES {
   display: flex;
   flex-direction: column;
 }
 
-/* FAQ Main Container */
 .Frequently-Asked-Questions {
   background-color: #4169E1;
   padding: 64px 96px;
   position: relative;
 }
 
-/* Main Heading */
 .Frequently-Asked-Questions h1 {
   font-size: 30px;
   color: #fff;
 }
 
-/* Subheading */
 .Frequently-Asked-Questions p {
   font-size: 18px;
   font-weight: 300;
@@ -26,7 +23,6 @@
   margin-bottom: 40px;
 }
 
-/* FAQ Wrapper Layout */
 .faq-wrapper {
   display: flex;
   gap: 40px;
@@ -34,7 +30,6 @@
   flex-wrap: wrap;
 }
 
-/* Image Section */
 .personStanding img {
   width: 306px;
   height: 776px;
@@ -42,7 +37,6 @@
   border-radius: 8px;
 }
 
-/* Scrollable Switches Section */
 .Switches {
   flex: 1;
   display: flex;
@@ -60,7 +54,6 @@
   display: none;
 }
 
-/* Each Section Box */
 .faq-section {
   position: relative;
   background: #fff;
@@ -73,7 +66,6 @@
   transition: all 0.3s ease;
 }
 
-/* Section Header Label */
 .section-header {
   position: absolute;
   top: 0;
@@ -90,13 +82,11 @@
   z-index: 1;
 }
 
-/* FAQ List Section */
 .faq-list {
   background: white;
   margin-top: -30px;
 }
 
-/* Individual Question Card */
 .faq-item {
   border-bottom: 1px solid #f1f1f1;
   background: #f9f9f9;
@@ -110,7 +100,6 @@
   background: #f1f7ff;
 }
 
-/* Question Layout */
 .question {
   display: flex;
   justify-content: space-between;
@@ -118,14 +107,12 @@
   cursor: pointer;
 }
 
-/* Question Text */
 .question h3 {
   margin: 0;
   font-size: 18px;
   color: #333;
 }
 
-/* Toggle Button */
 .toggle {
   width: 48px;
   height: 24px;
@@ -140,7 +127,6 @@
   background: #4CAF50;
 }
 
-/* Toggle Switch Circle */
 .toggle span {
   position: absolute;
   width: 20px;
@@ -156,7 +142,6 @@
   left: 26px;
 }
 
-/* Answer Text */
 .answer {
   margin-top: 10px;
   padding-left: 8px;
@@ -165,7 +150,7 @@
   font-size: 16px;
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
+
 @media (max-width: 768px) {
   .Frequently-Asked-Questions {
     padding: 32px 24px;

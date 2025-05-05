@@ -1,4 +1,4 @@
-/* Base Navbar Layout */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-/* Wrap nav and topbar in a horizontal container */
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -18,7 +18,7 @@
   width: 100%;
 }
 
-/* Navigation Links */
+
 .navbar nav ul {
   display: flex;
   list-style: none;
@@ -39,7 +39,7 @@ li:hover {
   border-bottom: 2px solid white;
 }
 
-/* Topbar (Language + Country) */
+
 .topbar {
   display: flex;
   align-items: center;
@@ -63,7 +63,7 @@ li:hover {
   opacity: 0.85;
 }
 
-/* Hamburger Button (hidden by default) */
+
 .hamburger {
   display: none;
   font-size: 24px;
@@ -73,7 +73,7 @@ li:hover {
   cursor: pointer;
 }
 
-/* Responsive for tablets and below */
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -113,7 +113,7 @@ li:hover {
   }
 }
 
-/* Further optimization for very small screens */
+
 @media (max-width: 480px) {
   .navbar {
     padding: 12px 20px;

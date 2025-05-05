@@ -23,7 +23,6 @@ const Footer = () => {
             <h2><img src={Logo} alt="logo" /></h2>
             <p>AI powered learning. Beyond Limits.</p>
             <div className="footer-icons">
-              {/* Replace '#' with real URLs and use icons as needed */}
               <a href="#"><i><FaXTwitter size={15}/></i></a>
               <a href="#"><i><FaLinkedin size={15}/></i></a>
               <a href="#"><i><FaYoutube size={15}/></i></a>

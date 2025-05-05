@@ -1,4 +1,4 @@
-/* Base styles for the Pricing Section */
+
 .pricing-section {
   padding: 60px 20px;
   text-align: center;
@@ -17,14 +17,14 @@
   margin: 0 auto 30px;
 }
 
-/* Educator Section */
+
 .educator-section img {
-  max-width: 100%; /* Ensure the image scales properly */
+  max-width: 100%; 
   height: auto;
   margin-bottom: 50px;
 }
 
-/* Region Toggle Section */
+
 .region-toggle {
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@
   color: white;
 }
 
-/* Grid Layout for Pricing Cards */
+
 .pricing-grid {
   display: grid;
   gap: 20px;
@@ -60,9 +60,7 @@
   justify-items: center;
 }
 
-/* Media Queries for Responsiveness */
 
-/* Tablets */
 @media (max-width: 768px) {
   .pricing-section h2 {
     font-size: 1.8rem;
@@ -82,12 +80,12 @@
   }
 
   .educator-section img {
-    width: 90%; /* Adjust image size for tablet */
+    width: 90%;
     margin-bottom: 30px;
   }
 }
 
-/* Small Screens (Mobile) */
+
 @media (max-width: 480px) {
   .pricing-section h2 {
     font-size: 1.5rem;
@@ -104,11 +102,11 @@
   }
 
   .pricing-grid {
-    grid-template-columns: 1fr; /* Single column for small screens */
+    grid-template-columns: 1fr; 
   }
 
   .educator-section img {
-    width: 100%; /* Ensure the image is fully responsive */
+    width: 100%; 
     margin-bottom: 20px;
   }
 }

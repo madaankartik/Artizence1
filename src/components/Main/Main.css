@@ -1,19 +1,16 @@
-/* For mobile-first approach, let's start with a more mobile-friendly base layout */
-
-/* General adjustments for all screens */
 .hero-section {
   position: relative;
   background: #ffffff;
   overflow: hidden;
 }
 
-/* Hero Content Layout */
+
 .hero-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 60px 80px;
-  flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+  flex-wrap: wrap; 
 }
 
 .left {
@@ -70,7 +67,7 @@ h1 {
   border: 2px solid #b2dfdb;
 }
 
-/* Profile Image Container */
+
 .right .circle-bg {
   position: relative;
   width: 300px;
@@ -156,7 +153,7 @@ h1 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Workspace Section */
+
 .workspace-section {
   padding: 40px 20px;
   text-align: center;
@@ -285,9 +282,7 @@ h1 {
   margin: 0 auto;
 }
 
-/* Responsive layout for mobile devices */
 
-/* Adjust for smaller screens */
 @media (max-width: 900px) {
   .hero-content {
     flex-direction: column;
@@ -317,19 +312,19 @@ h1 {
     max-width: 100%;
   }
 
-  /* Adjust curve section */
+
   .curve-bg {
-    height: 200px; /* Smaller height for mobile */
+    height: 200px; 
   }
 
-  /* Adjust Feature Section */
+
   .feature-grid {
     grid-template-columns: 1fr;
     gap: 40px;
   }
 }
 
-/* Further adjustments for very small screens (mobile-first approach) */
+
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
@@ -350,7 +345,7 @@ h1 {
   }
 
   .hero-content {
-    padding: 30px 15px; /* Adjusted padding for smaller screens */
+    padding: 30px 15px; 
   }
 
   .left {
@@ -369,11 +364,11 @@ h1 {
 
   .feature-section h2,
   .workspace-section h2 {
-    font-size: 24px; /* Reduced font size for smaller screens */
+    font-size: 24px; 
   }
 
   .badge {
-    padding: 6px 16px; /* Adjusted padding for small badges */
+    padding: 6px 16px; 
     font-size: 12px;
   }
 
@@ -382,7 +377,7 @@ h1 {
     font-size: 14px;
   }
 
-  /* Reduce gap between items */
+ 
   .feature-grid {
     gap: 20px;
   }
